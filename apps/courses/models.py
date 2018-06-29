@@ -2,7 +2,7 @@ from datetime import datetime
 
 from django.db import models
 
-from organization.models import Teacher, CourseOrg
+from apps.organization.models import Teacher, CourseOrg
 
 
 # 课程基本信息表

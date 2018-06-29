@@ -38,10 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "users",
+    "users.apps.UsersConfig",
     "organization",
     "courses",
     "operation",
+    'xadmin',
+    'crispy_forms',
+    'reversion',
 ]
 
 # 此处重载是为了使我们的UserProfile生效
@@ -89,7 +92,7 @@ DATABASES = {
         'PORT': 3306,
         'USER': 'root',
         'PASSWORD': '123456',
-        'CHARSET': 'utf8'
+        'CHARSET': 'utf8',
     }
 }
 
